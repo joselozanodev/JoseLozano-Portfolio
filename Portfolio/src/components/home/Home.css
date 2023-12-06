@@ -1,0 +1,20 @@
+.container-text{
+    display: inline-block;
+}
+
+.text-animate{
+    border-right: 1.5px solid #000;
+    line-height: 1.3em;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 3s steps(41), blink-caret .4s step-end infinite alternate;
+}
+
+@keyframes blink-caret{
+    50% {border-color: transparent;}
+}
+
+@keyframes typing{
+    from {width: 0;}
+}
