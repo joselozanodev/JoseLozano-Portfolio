@@ -11,6 +11,11 @@
     animation: typing 3s steps(41), blink-caret .4s step-end infinite alternate;
 }
 
+.dark .text-animate{
+    border-right: 1.5px solid #fff;
+
+}
+
 @keyframes blink-caret{
     50% {border-color: transparent;}
 }

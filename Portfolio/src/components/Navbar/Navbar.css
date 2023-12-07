@@ -40,3 +40,17 @@
     transform: translateY(-9px) rotate(-45deg);
     background-color: black;
   }
+
+  .dark .hamburger-menu.visible .line:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
+    background-color: white;
+  }
+  
+  .dark .hamburger-menu.visible .line:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .dark .hamburger-menu.visible .line:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg);
+    background-color: white;
+  }

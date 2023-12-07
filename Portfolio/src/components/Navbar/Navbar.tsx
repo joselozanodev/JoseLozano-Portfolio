@@ -30,12 +30,12 @@ function Navbar() {
 
   return (
     <>
-      <nav className="h-[8vh] fixed w-full font-montserrat border-b-[1px] border-b-portfolio-50 bg-gradient-to-br from-portfolio-800 to-portfolio-900 flex flex-row justify-between text-white items-center">
-        <h1 className=" ml-[2%] font-[600]" onClick={() => navigate("/")}>
+      <nav className="h-[8vh] fixed w-full font-montserrat shadow-sm shadow-white bg-gradient-to-br from-blue-600 to-blue-700 dark:from-slate-800 dark:to-slate-900 flex flex-row justify-between text-white items-center">
+        <h1 className=" ml-[2%] font-[600] cursor-pointer" onClick={() => navigate("/")}>
           JoseLozanoDev
         </h1>
         <motion.ul
-          className={`flex flex-col justify-center items-center text-black text-[2rem] gap-[7%] bg-white h-[100vh] w-full fixed z-[100] top-0`}
+          className={`flex flex-col justify-center items-center text-black text-[2rem] gap-[7%] bg-white dark:bg-slate-700 dark:text-white h-[100vh] w-full fixed ${isMenuOpen ?'z-[200]':''} top-0`}
           variants={navbarVariants}
           initial="hidden"
           animate={isMenuOpen ? "visible" : "hidden"}
@@ -59,7 +59,7 @@ function Navbar() {
         <div className="flex flex-row justify-center items-center">
         <DarkMode/>
         <div 
-        className={`hamburger-menu${isMenuOpen ?' visible':''} z-[200]`}
+        className={`hamburger-menu${isMenuOpen ?' visible':''} z-[300]`}
         onClick={()=> setIsMenuOpen(!isMenuOpen)}
         >
           <div className={`line`}></div>

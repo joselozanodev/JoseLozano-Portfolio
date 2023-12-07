@@ -6,7 +6,7 @@ function Home() {
       <article className="pt-[10vh] px-[2%] flex flex-col">
         <header className="flex flex-col justify-center items-center font-montserrat font-[600]">
           <div className="container-text">
-            <h2 className="text-animate">I'm Jose Lozano, Front-End web developer.</h2>
+            <h2 className="text-animate dark:text-white">I'm Jose Lozano, Front-End web developer.</h2>
           </div>
           <img
             src="/assets/jose-lozano.png"
